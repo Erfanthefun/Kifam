@@ -283,7 +283,7 @@
     const { owe, owed } = debtTotals();
     const totalLoanDebt = S.loans.reduce((s, l) => s + C.loanSummary(l).remainingAmount, 0);
     return `
-    <header class="top home-top"><div><p class="eyebrow">${C.weekday(t)} ${dateTitle(t)}</p><h1>${monthTitle(cur)}</h1></div><span class="brand" aria-label="Kifam">Kifam</span></header>
+    <header class="top home-top"><div><p class="eyebrow">${C.weekday(t)} ${dateTitle(t)}</p><h1>${monthTitle(cur)}</h1></div><img class="logo" src="icons/icon-192.png" width="40" height="40" alt="Kifam"></header>
     <section class="hero" aria-labelledby="heroLabel">
       <p class="hero-label" id="heroLabel">باقی‌مانده</p>
       <p class="hero-num"><bdi dir="ltr"><span id="heroNum" data-v="${bal}">${fmtBal(bal)}</span></bdi><small>${unitLabel()}</small></p>
